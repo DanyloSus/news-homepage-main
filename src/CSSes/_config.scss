@@ -4,8 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  overflow-x: hidden;
+@layer components {
+  * {
+    @apply overflow-x-hidden md:overflow-x-visible;
+  }
 }
 
 :root {
@@ -16,4 +18,72 @@
 a,
 p {
   color: hsl(236, 13%, 42%);
+}
+
+.head-anim {
+  animation: head-anim 1s ease-in-out 0.5s both;
+}
+
+@keyframes head-anim {
+  0% {
+    position: relative;
+    left: -100px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+.main-anim {
+  animation: main-anim 1s ease-in-out 0.75s both;
+}
+
+@keyframes main-anim {
+  0% {
+    position: relative;
+    left: -100px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+.asid-anim {
+  animation: asid-anim 1s ease-in-out 1s both;
+}
+
+@keyframes asid-anim {
+  0% {
+    position: relative;
+    top: -100px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.best-anim {
+  animation: best-anim 1s ease-in-out 1.25s both;
+}
+
+@keyframes best-anim {
+  0% {
+    position: relative;
+    left: -100px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+    opacity: 1;
+  }
 }

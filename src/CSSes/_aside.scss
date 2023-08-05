@@ -1,8 +1,8 @@
 @layer components {
   aside {
-    @apply px-6 py-8;
+    @apply px-6 py-8 md:flex flex-col;
     h2 {
-      @apply text-soft-orange text-4xl font-extrabold mb-10;
+      @apply text-soft-orange text-4xl font-extrabold md:font-bold mb-10 overflow-hidden;
     }
     > div > div {
       h3 {
@@ -12,7 +12,7 @@
         @apply text-[15.5px] text-grayish-blue mt-2;
       }
       hr {
-        @apply border-grayish-blue mt-[32px];
+        @apply border-grayish-blue mt-[32px] md:mb-[32px];
       }
     }
   }

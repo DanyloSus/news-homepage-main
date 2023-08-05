@@ -2,10 +2,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-* {
-  overflow-x: hidden;
+@layer components {
+  * {
+    @apply overflow-x-hidden md:overflow-x-visible;
+  }
 }
-
 :root {
   font-family: "Inter", sans-serif;
   color: hsl(240, 100%, 5%);
@@ -16,17 +17,85 @@ p {
   color: hsl(236, 13%, 42%);
 }
 
+.head-anim {
+  animation: head-anim 1s ease-in-out 0.5s both;
+}
+
+@keyframes head-anim {
+  0% {
+    position: relative;
+    left: -100px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+    opacity: 1;
+  }
+}
+.main-anim {
+  animation: main-anim 1s ease-in-out 0.75s both;
+}
+
+@keyframes main-anim {
+  0% {
+    position: relative;
+    left: -100px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+    opacity: 1;
+  }
+}
+.asid-anim {
+  animation: asid-anim 1s ease-in-out 1s both;
+}
+
+@keyframes asid-anim {
+  0% {
+    position: relative;
+    top: -100px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    top: 0px;
+    opacity: 1;
+  }
+}
+.best-anim {
+  animation: best-anim 1s ease-in-out 1.25s both;
+}
+
+@keyframes best-anim {
+  0% {
+    position: relative;
+    left: -100px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    left: 0px;
+    opacity: 1;
+  }
+}
 @layer components {
   a {
     @apply hover:text-soft-orange;
   }
 }
+#menu {
+  box-shadow: 0px 0px 0px 1000px rgba(0, 0, 0, 0.5);
+}
+
 @layer components {
   aside {
-    @apply px-6 py-8;
+    @apply px-6 py-8 md:flex flex-col;
   }
   aside h2 {
-    @apply text-soft-orange text-4xl font-extrabold mb-10;
+    @apply text-soft-orange text-4xl font-extrabold md:font-bold mb-10 overflow-hidden;
   }
   aside > div > div h3 {
     @apply text-white text-xl font-bold hover:text-soft-orange;
@@ -35,12 +104,12 @@ p {
     @apply text-[15.5px] text-grayish-blue mt-2;
   }
   aside > div > div hr {
-    @apply border-grayish-blue mt-[32px];
+    @apply border-grayish-blue mt-[32px] md:mb-[32px];
   }
 }
 @layer components {
   #best > div {
-    @apply gap-6;
+    @apply gap-6 overflow-x-auto;
   }
   #best > div img {
     @apply cursor-pointer object-cover;
@@ -49,12 +118,12 @@ p {
     @apply flex flex-col gap-3;
   }
   #best > div > div h2 {
-    @apply text-grayish-blue font-bold text-4xl;
+    @apply text-grayish-blue font-bold text-4xl overflow-hidden;
   }
   #best > div > div h3 {
     @apply text-very-dark-blue font-extrabold text-[16.5299px] cursor-pointer hover:text-soft-red;
   }
   #best > div > div p {
-    @apply text-[15.7999px];
+    @apply text-[15.3899px] font-bold;
   }
 }/*# sourceMappingURL=index.css.map */

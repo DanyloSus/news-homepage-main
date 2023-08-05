@@ -1,20 +1,20 @@
 @layer components {
   #best {
     > div {
-      @apply gap-6;
+      @apply gap-6 overflow-x-auto;
       img {
         @apply cursor-pointer object-cover;
       }
       > div {
         @apply flex flex-col gap-3;
         h2 {
-          @apply text-grayish-blue font-bold text-4xl;
+          @apply text-grayish-blue font-bold text-4xl overflow-hidden;
         }
         h3 {
           @apply text-very-dark-blue font-extrabold text-[16.5299px] cursor-pointer hover:text-soft-red;
         }
         p {
-          @apply text-[15.7999px];
+          @apply text-[15.3899px] font-bold;
         }
       }
     }

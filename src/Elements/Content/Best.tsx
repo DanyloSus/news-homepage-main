@@ -1,6 +1,9 @@
 const Best = () => {
   return (
-    <article id="best" className="col-span-3 flex items-center gap-6">
+    <article
+      id="best"
+      className="col-span-3 flex items-center gap-6 md:flex-col best-anim"
+    >
       <div className="flex">
         <img src="./image-retro-pcs.jpg" alt="image retro pcs" />
         <div>

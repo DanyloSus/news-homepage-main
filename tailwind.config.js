@@ -12,6 +12,15 @@ export default {
         "dark-grayish-blue": "hsl(236, 13%, 42%)",
         "very-dark-blue": "hsl(240, 100%, 5%)",
       },
+      screens: {
+        md: { max: "768px" },
+      },
+      spacing: {
+        menu: "calc(100vh - 65vh)",
+      },
+      dropShadow: {
+        "3xl": "0 0 0 1000px hsla(0, 0%, 0%, 0.5)",
+      },
     },
   },
   plugins: [],

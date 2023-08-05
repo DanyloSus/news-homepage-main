@@ -1,6 +1,6 @@
 const Aside = () => {
   return (
-    <aside className=" row-span-2 bg-very-dark-blue">
+    <aside className=" row-span-2 bg-very-dark-blue asid-anim">
       <h2>New</h2>
       <div className="grid grid-rows-3 h-full">
         <div>
