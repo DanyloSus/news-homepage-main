@@ -23,7 +23,7 @@ const Header = () => {
       />
       <nav
         id="menu"
-        className="absolute -top-0 -right-full h-screen w-menu bg-white  flex-col transition-all z-20 px-4 py-12 hidden"
+        className="absolute -top-0 -right-full h-screen w-menu bg-white  flex-col transition-all px-4 py-12 hidden z-30"
       >
         <img
           src="./icon-menu-close.svg"

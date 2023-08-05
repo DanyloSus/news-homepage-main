@@ -21,7 +21,7 @@ p {
 }
 
 .head-anim {
-  animation: head-anim 1s ease-in-out 0.5s both;
+  animation: head-anim 1s ease-in-out 0.5s backwards;
 }
 
 @keyframes head-anim {
@@ -38,7 +38,7 @@ p {
 }
 
 .main-anim {
-  animation: main-anim 1s ease-in-out 0.75s both;
+  animation: main-anim 1s ease-in-out 0.75s backwards;
 }
 
 @keyframes main-anim {
@@ -55,7 +55,7 @@ p {
 }
 
 .asid-anim {
-  animation: asid-anim 1s ease-in-out 1s both;
+  animation: asid-anim 1s ease-in-out 1s backwards;
 }
 
 @keyframes asid-anim {
@@ -72,7 +72,7 @@ p {
 }
 
 .best-anim {
-  animation: best-anim 1s ease-in-out 1.25s both;
+  animation: best-anim 1s ease-in-out 1.25s backwards;
 }
 
 @keyframes best-anim {
