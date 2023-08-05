@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  overflow-x: hidden;
+}
+
 :root {
   font-family: "Inter", sans-serif;
+  color: hsl(240, 100%, 5%);
+}
+
+a,
+p {
+  color: hsl(236, 13%, 42%);
 }

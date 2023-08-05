@@ -1,0 +1,19 @@
+@layer components {
+  aside {
+    @apply px-6 py-8;
+    h2 {
+      @apply text-soft-orange text-4xl font-extrabold mb-10;
+    }
+    > div > div {
+      h3 {
+        @apply text-white text-xl font-bold hover:text-soft-orange;
+      }
+      p {
+        @apply text-[15.5px] text-grayish-blue mt-2;
+      }
+      hr {
+        @apply border-grayish-blue mt-[32px];
+      }
+    }
+  }
+}

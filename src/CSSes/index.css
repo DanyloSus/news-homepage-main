@@ -2,6 +2,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  overflow-x: hidden;
+}
+
 :root {
   font-family: "Inter", sans-serif;
+  color: hsl(240, 100%, 5%);
+}
+
+a,
+p {
+  color: hsl(236, 13%, 42%);
+}
+
+@layer components {
+  a {
+    @apply hover:text-soft-orange;
+  }
+}
+@layer components {
+  aside {
+    @apply px-6 py-8;
+  }
+  aside h2 {
+    @apply text-soft-orange text-4xl font-extrabold mb-10;
+  }
+  aside > div > div h3 {
+    @apply text-white text-xl font-bold hover:text-soft-orange;
+  }
+  aside > div > div p {
+    @apply text-[15.5px] text-grayish-blue mt-2;
+  }
+  aside > div > div hr {
+    @apply border-grayish-blue mt-[32px];
+  }
+}
+@layer components {
+  #best > div {
+    @apply gap-6;
+  }
+  #best > div img {
+    @apply cursor-pointer object-cover;
+  }
+  #best > div > div {
+    @apply flex flex-col gap-3;
+  }
+  #best > div > div h2 {
+    @apply text-grayish-blue font-bold text-4xl;
+  }
+  #best > div > div h3 {
+    @apply text-very-dark-blue font-extrabold text-[16.5299px] cursor-pointer hover:text-soft-red;
+  }
+  #best > div > div p {
+    @apply text-[15.7999px];
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,22 @@
+@layer components {
+  #best {
+    > div {
+      @apply gap-6;
+      img {
+        @apply cursor-pointer object-cover;
+      }
+      > div {
+        @apply flex flex-col gap-3;
+        h2 {
+          @apply text-grayish-blue font-bold text-4xl;
+        }
+        h3 {
+          @apply text-very-dark-blue font-extrabold text-[16.5299px] cursor-pointer hover:text-soft-red;
+        }
+        p {
+          @apply text-[15.7999px];
+        }
+      }
+    }
+  }
+}
